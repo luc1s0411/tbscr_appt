@@ -1,0 +1,30 @@
+# 统一行尾：仓库与工作区均使用 LF，不受各人 core.autocrlf 配置影响
+* text=auto eol=lf
+
+# Windows 下需要 CRLF 的脚本
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell 脚本必须是 LF，否则在容器 / Linux 下无法执行
+*.sh text eol=lf
+
+# 二进制文件不做任何转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.svg text
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.zip binary
+*.gz binary
+*.apk binary
+*.jks binary
+*.keystore binary
+*.xlsx binary
+*.pdf binary
+*.sqlite binary

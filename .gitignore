@@ -1,0 +1,65 @@
+# ---------- 环境与密钥 ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.jks
+*.keystore
+
+# ---------- Python / FastAPI ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.uv/
+*.egg-info/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Node / uni-app ----------
+node_modules/
+unpackage/
+dist/
+.output/
+.nuxt/
+.hbuilderx/
+*.log
+
+# ---------- 数据库与备份 ----------
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.dump
+backups/
+
+# ---------- 运行时产物 ----------
+storage/
+uploads/
+temp/
+tmp/
+
+# ---------- 测试与覆盖率 ----------
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.junit/
+
+# ---------- 编辑器与系统 ----------
+.idea/
+.vscode/
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 本地协作数据（保留在本地，不入库） ----------
+.workbuddy/

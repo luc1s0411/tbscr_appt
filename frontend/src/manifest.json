@@ -1,0 +1,33 @@
+{
+  "name": "结核病筛查预约",
+  "appid": "",
+  "description": "河北农业大学校医院结核病筛查预约管理",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    "distribute": {
+      "android": {
+        "permissions": []
+      },
+      "ios": {},
+      "sdkConfigs": {}
+    }
+  },
+  "h5": {
+    "title": "结核病筛查预约",
+    "router": {
+      "mode": "hash"
+    }
+  },
+  "vueVersion": "3"
+}

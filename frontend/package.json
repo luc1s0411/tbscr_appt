@@ -1,0 +1,20 @@
+{
+  "name": "tbscr-appt-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "结核病筛查预约管理 App 前端（uni-app）",
+  "scripts": {
+    "dev:h5": "uni",
+    "build:h5": "uni build",
+    "dev:app": "uni -p app",
+    "build:app": "uni build -p app"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-5030320261023001",
+    "@dcloudio/uni-components": "3.0.0-5030320261023001",
+    "@dcloudio/uni-h5": "3.0.0-5030320261023001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-5030320261023001",
+    "vite": "5.2.8",
+    "vue": "3.4.21"
+  }
+}
