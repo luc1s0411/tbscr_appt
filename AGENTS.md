@@ -5,7 +5,7 @@
 - 项目目标：河北农业大学校医院的结核病筛查预约管理 App。学生用邮箱验证码登录，预约筛查日期与时段、查看预约凭证、开检前 24 小时可取消或改约；校医院管理员配置号源、按学院批次排期、现场扫码核销、录入 4 项筛查结果并导出名单。
 - 技术栈：前端 uni-app（Vue 3 + Vite），产出 Android APK；后端 Python 3.12 + FastAPI + SQLAlchemy 2.0（async）+ Alembic；数据库 MySQL 8.0；认证 JWT；验证码邮件走 aiosmtplib；导出用 openpyxl；部署为 Caddy + Docker Compose。未使用 Redis、消息队列、微服务。
 - 前端目录：`frontend/`（uni-app 客户端，尚未初始化）
-- 后端目录：`backend/`（FastAPI 后端，尚未初始化）
+- 后端目录：`backend/`（FastAPI 后端，已提供 `GET /health`、`POST /auth/register`）
 
 需求见 `docs/PRD.md`，技术方案与已知坑见 `docs/TECH_STACK.md`，验收测试放 `tests/`。
 
@@ -27,4 +27,4 @@
 - 后端测试：`pytest tests -v`（在仓库根目录执行）
 - 前端检查：`cd frontend && npm run build:h5`（当前未配置 ESLint，以构建代替静态检查）
 
-> 前后端骨架已可运行（后端 `GET /health`、前端静态首页），业务功能未开发。
+> 前端骨架可运行（静态首页）；后端已实现健康检查与邮箱密码注册，用户数据暂存进程内（MySQL 未接入），其余业务功能未开发。
